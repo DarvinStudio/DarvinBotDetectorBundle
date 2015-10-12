@@ -1,0 +1,22 @@
+{
+  "name": "darvinstudio/bot-detector-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony DarvinBotDetectorBundle",
+  "keywords": ["Bot"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name":     "Darvin Studio",
+      "email":    "info@darvin-studio.ru",
+      "homepage": "https://www.darvin-studio.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "symfony/framework-bundle": "~2.1",
+    "vipx/bot-detect": "~1.0"
+  },
+  "autoload": {
+    "psr-0": { "Darvin\\BotDetectorBundle": "" }
+  }
+}
