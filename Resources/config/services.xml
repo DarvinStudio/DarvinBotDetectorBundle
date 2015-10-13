@@ -1,20 +1,15 @@
 <?xml version="1.0" ?>
 
 <container xmlns="http://symfony.com/schema/dic/services"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
-    <!--
-    <parameters>
-        <parameter key="darvin_bot_detector.example.class">Darvin\BotDetectorBundle\Example</parameter>
-    </parameters>
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="darvin_bot_detector.example" class="%darvin_bot_detector.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service class="Darvin\BotDetectorBundle\EventListener\BotListener" id="darvin_bot_detector.bot_listener">
+            <argument type="service" id="doctrine"/>
+            <argument type="service" id="vipx_bot_detect.detector"/>
+            <argument type="service" id="logger"/>
+            <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse"/>
         </service>
     </services>
-    -->
 </container>
