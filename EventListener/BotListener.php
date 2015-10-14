@@ -64,7 +64,7 @@ class BotListener
             try {
                 $item = new DetectedBot();
                 $item->setBotType($meta->getAgent());
-                $item->setIp($meta->getIp());
+                $item->setIp($request->getClientIp());
                 $item->setUrl($request->getRequestUri());
                 $item->setResponseCode($response->getStatusCode());
 
