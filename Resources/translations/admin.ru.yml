@@ -1,0 +1,18 @@
+detected_bot:
+    action:
+        filter:
+            reset:  Сбросить фильтр
+            submit: Применить фильтр
+        index:
+            link:  Запросы ботов
+            title: Запросы ботов
+        show:
+            title: Запрос бота от %entity%
+    entity:
+        bot_type:      Тип бота
+        date:          Дата
+        date_from:     Дата (с)
+        date_to:       Дата (по)
+        ip:            IP
+        response_code: Код ответа
+        url:           URL

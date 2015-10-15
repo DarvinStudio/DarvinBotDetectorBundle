@@ -1,0 +1,38 @@
+Darvin\BotDetectorBundle\Entity\DetectedBot:
+    disabled_routes:
+        - copy
+        - delete
+        - edit
+        - new
+        - update-property
+    form:
+        filter:
+            fields:
+                dateFrom: ~
+                dateTo:   ~
+                botType:
+                    strict_comparison: false
+                ip:
+                    strict_comparison: false
+                url:
+                    strict_comparison: false
+                responseCode:
+                    strict_comparison: false
+    view:
+        index:
+            action_widgets:
+                - show_link
+            fields:
+                date:         ~
+                botType:      ~
+                ip:           ~
+                url:          ~
+                responseCode: ~
+        show:
+            action_widgets: ~
+            fields:
+                date:         ~
+                botType:      ~
+                ip:           ~
+                url:          ~
+                responseCode: ~

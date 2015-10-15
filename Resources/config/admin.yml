@@ -1,0 +1,15 @@
+parameters:
+    darvin_bot_detector.admin.metadata.class: Darvin\AdminBundle\Metadata\Metadata
+
+    darvin_bot_detector.admin.metadata.detected_bot.entity: Darvin\BotDetectorBundle\Entity\DetectedBot
+    darvin_bot_detector.admin.metadata.detected_bot.config: @@DarvinBotDetectorBundle/Resources/config/admin/detected_bot.yml
+
+services:
+    darvin_bot_detector.admin.metadata.detected_bot:
+        class:   %darvin_bot_detector.admin.metadata.class%
+        factory: [ "@darvin_admin.metadata.factory", createMetadata ]
+        arguments:
+            - %darvin_bot_detector.admin.metadata.detected_bot.entity%
+            - %darvin_bot_detector.admin.metadata.detected_bot.config%
+        tags:
+            - { name: darvin_admin.metadata }

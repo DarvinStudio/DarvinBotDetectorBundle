@@ -18,6 +18,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class DetectedBot
 {
+    const DETECTED_BOT_CLASS = __CLASS__;
+
     /**
      * @var int
      *
@@ -68,6 +70,14 @@ class DetectedBot
     public function __construct()
     {
         $this->date = new \DateTime();
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->date->format('d.m.Y H:i');
     }
 
     /**

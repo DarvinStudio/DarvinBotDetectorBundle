@@ -1,0 +1,18 @@
+detected_bot:
+    action:
+        filter:
+            reset:  Reset filter
+            submit: Apply filter
+        index:
+            link:  Bot requests
+            title: Bot requests
+        show:
+            title: Bot request from %entity%
+    entity:
+        bot_type:      Bot type
+        date:          Date
+        date_from:     Date (from)
+        date_to:       Date (to)
+        ip:            IP
+        response_code: Response code
+        url:           URL
