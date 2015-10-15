@@ -1,4 +1,5 @@
 Darvin\BotDetectorBundle\Entity\DetectedBot:
+    entity_name: bot
     disabled_routes:
         - copy
         - delete

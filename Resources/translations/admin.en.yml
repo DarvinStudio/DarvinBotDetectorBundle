@@ -1,4 +1,4 @@
-detected_bot:
+bot:
     action:
         filter:
             reset:  Reset filter
@@ -16,3 +16,5 @@ detected_bot:
         ip:            IP
         response_code: Response code
         url:           URL
+    menu:
+        description: ""

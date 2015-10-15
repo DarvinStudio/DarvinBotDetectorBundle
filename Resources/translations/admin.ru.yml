@@ -1,4 +1,4 @@
-detected_bot:
+bot:
     action:
         filter:
             reset:  Сбросить фильтр
@@ -16,3 +16,5 @@ detected_bot:
         ip:            IP
         response_code: Код ответа
         url:           URL
+    menu:
+        description: ""
