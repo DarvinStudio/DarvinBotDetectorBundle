@@ -25,6 +25,6 @@
     "fzaninotto/faker": "1.5.*"
   },
   "autoload": {
-    "psr-0": { "Darvin\\BotDetectorBundle": "" }
+    "psr-4": { "Darvin\\BotDetectorBundle\\": "" }
   }
 }
