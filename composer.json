@@ -1,5 +1,5 @@
 {
-  "name": "darvinstudio/bot-detector-bundle",
+  "name": "darvinstudio/darvin-bot-detector-bundle",
   "type": "symfony-bundle",
   "description": "Symfony DarvinBotDetectorBundle",
   "keywords": ["Bot"],
