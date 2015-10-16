@@ -16,12 +16,13 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernel;
 use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use Vipx\BotDetectBundle\BotDetector;
 
-
+/**
+ * Bot event listener
+ */
 class BotListener
 {
     /** @var RegistryInterface */
@@ -35,9 +36,10 @@ class BotListener
 
     /**
      * BotListener constructor.
+     *
      * @param RegistryInterface $doctrine
-     * @param BotDetector $botDetector
-     * @param LoggerInterface $logger
+     * @param BotDetector       $botDetector
+     * @param LoggerInterface   $logger
      */
     public function __construct(RegistryInterface $doctrine, BotDetector $botDetector, LoggerInterface $logger)
     {
@@ -46,9 +48,12 @@ class BotListener
         $this->logger = $logger;
     }
 
+    /**
+     * @param \Symfony\Component\HttpKernel\Event\FilterResponseEvent $event Event
+     */
     public function onKernelResponse(FilterResponseEvent $event)
     {
-        if ($event->getRequestType()!=HttpKernel::MASTER_REQUEST) {
+        if ($event->getRequestType() != HttpKernel::MASTER_REQUEST) {
             return;
         }
 
@@ -60,7 +65,7 @@ class BotListener
         $response = $event->getResponse();
 
         $meta = $this->botDetector->detectFromRequest($request);
-        if ($meta){
+        if ($meta) {
             try {
                 $item = new DetectedBot();
                 $item->setBotType($meta->getAgent());
@@ -70,7 +75,7 @@ class BotListener
 
                 $em->persist($item);
                 $em->flush();
-            } catch (\Exception $ex){
+            } catch (\Exception $ex) {
                 $this->logger->err(sprintf("Unable to write detected bot into db: %s", $ex->getMessage()));
             }
         }

@@ -10,9 +10,11 @@
 
 namespace Darvin\BotDetectorBundle\Entity;
 
-
 use Doctrine\ORM\EntityRepository;
 
+/**
+ * Detected bot entity repository
+ */
 class DetectedBotRepository extends EntityRepository
 {
 
