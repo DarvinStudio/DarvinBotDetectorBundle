@@ -11,9 +11,7 @@
 namespace Darvin\BotDetectorBundle\Security;
 
 use Darvin\AdminBundle\Security\Configuration\AbstractSecurityConfiguration;
-use Darvin\AdminBundle\Security\Permissions\ObjectPermissions;
 use Darvin\BotDetectorBundle\Entity\DetectedBot;
-use Darvin\ConfigBundle\Parameter\ParameterModel;
 
 /**
  * Security configuration
@@ -23,31 +21,18 @@ class SecurityConfiguration extends AbstractSecurityConfiguration
     /**
      * {@inheritdoc}
      */
-    public function getModel()
+    public function getName()
     {
-        return array(
-            new ParameterModel(
-                'permissions',
-                ParameterModel::TYPE_ARRAY,
-                array(
-                    'detected_bot' => new ObjectPermissions(DetectedBot::DETECTED_BOT_CLASS),
-                ),
-                array(
-                    'form' => array(
-                        'options' => array(
-                            'type' => 'darvin_admin_security_object_permissions',
-                        ),
-                    ),
-                )
-            ),
-        );
+        return 'darvin_bot_detector_security';
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    protected function getSecurableObjectClasses()
     {
-        return 'darvin_bot_detector_security';
+        return array(
+            'detected_bot' => DetectedBot::DETECTED_BOT_CLASS,
+        );
     }
 }
