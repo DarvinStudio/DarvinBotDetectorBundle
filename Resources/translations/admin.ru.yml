@@ -18,3 +18,13 @@ bot:
         url:           URL
     menu:
         description: ""
+
+configuration:
+    darvin_bot_detector_security:
+        parameter:
+            permissions: Права
+        title: Настройки безопасности модуля «Детектор ботов»
+
+security:
+    object:
+        detected_bot: Запрос бота
