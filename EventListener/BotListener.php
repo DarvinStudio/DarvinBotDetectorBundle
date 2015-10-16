@@ -12,12 +12,12 @@ namespace Darvin\BotDetectorBundle\EventListener;
 
 use Darvin\BotDetectorBundle\Entity\DetectedBot;
 use Doctrine\ORM\EntityManager;
+use Psr\Log\LoggerInterface;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernel;
-use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use Vipx\BotDetectBundle\BotDetector;
 
 /**
@@ -76,7 +76,7 @@ class BotListener
                 $em->persist($item);
                 $em->flush();
             } catch (\Exception $ex) {
-                $this->logger->err(sprintf("Unable to write detected bot into db: %s", $ex->getMessage()));
+                $this->logger->error(sprintf("Unable to write detected bot into db: %s", $ex->getMessage()));
             }
         }
     }
