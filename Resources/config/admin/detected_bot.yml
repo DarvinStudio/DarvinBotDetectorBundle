@@ -6,6 +6,12 @@ Darvin\BotDetectorBundle\Entity\DetectedBot:
         - edit
         - new
         - update-property
+    sortable_fields:
+        date:         ~
+        botType:      ~
+        ip:           ~
+        url:          ~
+        responseCode: ~
     form:
         filter:
             fields:
