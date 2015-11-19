@@ -13,7 +13,7 @@
   ],
   "require": {
     "vipx/bot-detect-bundle": "*",
-    "darvinstudio/darvin-admin-bundle": "*"
+    "darvinstudio/darvin-admin-bundle": "*@dev"
   },
   "require-dev": {
     "doctrine/doctrine-fixtures-bundle": "2.2.*",
