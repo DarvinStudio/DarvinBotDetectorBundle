@@ -27,4 +27,4 @@ configuration:
 
 security:
     object:
-        detected_bot: Bot request
+        bot: Bot request

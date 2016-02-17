@@ -32,7 +32,7 @@ class SecurityConfiguration extends AbstractSecurityConfiguration
     protected function getSecurableObjectClasses()
     {
         return array(
-            'detected_bot' => DetectedBot::DETECTED_BOT_CLASS,
+            'bot' => DetectedBot::DETECTED_BOT_CLASS,
         );
     }
 }
