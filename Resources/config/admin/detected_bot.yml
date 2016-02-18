@@ -27,7 +27,7 @@ form:
 view:
     index:
         action_widgets:
-            - show_link
+            show_link: ~
         fields:
             date:         ~
             botType:      ~
