@@ -27,14 +27,14 @@ class LoadDetectedBotData implements FixtureInterface
     /**
      * @var array
      */
-    private static $botTypes = array(
+    private static $botTypes = [
         MetadataInterface::TYPE_BOT,
         MetadataInterface::TYPE_CRAWLER,
         MetadataInterface::TYPE_RSS,
         MetadataInterface::TYPE_SPAMBOT,
         MetadataInterface::TYPE_SPIDER,
         MetadataInterface::TYPE_VALIDATOR,
-    );
+    ];
 
     /**
      * {@inheritdoc}
