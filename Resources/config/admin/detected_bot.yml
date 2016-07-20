@@ -1,8 +1,8 @@
 entity_name: bot
 menu:
     icons:
-        small: bundles/darvinbotdetector/images/admin/detected_bot_small.png
-        big:   bundles/darvinbotdetector/images/admin/detected_bot_big.png
+        main:    bundles/darvinbotdetector/images/admin/detected_bot_main.png
+        sidebar: bundles/darvinbotdetector/images/admin/detected_bot_sidebar.png
 disabled_routes:
     - copy
     - delete
