@@ -16,8 +16,6 @@ bot:
         ip:            IP
         response_code: Response code
         url:           URL
-    menu:
-        description: ""
 
 configuration:
     darvin_bot_detector_security:
