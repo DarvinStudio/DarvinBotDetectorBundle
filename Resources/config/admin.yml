@@ -6,7 +6,7 @@ services:
     darvin_bot_detector.admin.metadata.detected_bot:
         parent: darvin_admin.metadata.abstract
         arguments:
-            - %darvin_bot_detector.admin.metadata.detected_bot.entity%
-            - %darvin_bot_detector.admin.metadata.detected_bot.config%
+            - "%darvin_bot_detector.admin.metadata.detected_bot.entity%"
+            - "%darvin_bot_detector.admin.metadata.detected_bot.config%"
         tags:
             - { name: darvin_admin.metadata }

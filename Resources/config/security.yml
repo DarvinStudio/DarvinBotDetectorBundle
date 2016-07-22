@@ -3,7 +3,7 @@ parameters:
 
 services:
     darvin_bot_detector.security.configuration:
-        class: %darvin_bot_detector.security.configuration.class%
+        class: "%darvin_bot_detector.security.configuration.class%"
         tags:
             - { name: darvin_config.configuration }
             - { name: darvin_admin.security_configuration }
