@@ -23,6 +23,5 @@ configuration:
             permissions: Права
         title: Настройки безопасности модуля «Детектор ботов»
 
-security:
-    object:
-        bot: Запрос бота
+securable:
+    bot: Запрос бота

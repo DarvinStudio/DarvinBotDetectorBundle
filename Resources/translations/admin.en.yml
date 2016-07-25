@@ -23,6 +23,5 @@ configuration:
             permissions: Permissions
         title: The "Bot detector" module security configuration
 
-security:
-    object:
-        bot: Bot request
+securable:
+    bot: Bot request
