@@ -19,8 +19,6 @@ bot:
 
 configuration:
     darvin_bot_detector_security:
-        parameter:
-            permissions: Permissions
         title: The "Bot detector" module security configuration
 
 securable:

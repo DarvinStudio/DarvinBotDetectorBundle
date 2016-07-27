@@ -19,8 +19,6 @@ bot:
 
 configuration:
     darvin_bot_detector_security:
-        parameter:
-            permissions: Права
         title: Настройки безопасности модуля «Детектор ботов»
 
 securable:
