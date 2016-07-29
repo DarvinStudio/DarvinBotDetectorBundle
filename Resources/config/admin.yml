@@ -2,6 +2,8 @@ parameters:
     darvin_bot_detector.admin.metadata.detected_bot.entity: Darvin\BotDetectorBundle\Entity\DetectedBot
     darvin_bot_detector.admin.metadata.detected_bot.config: "@@DarvinBotDetectorBundle/Resources/config/admin/detected_bot.yml"
 
+    darvin_bot_detector.admin.security_configuration.class: Darvin\BotDetectorBundle\Admin\Security\Configuration
+
 services:
     darvin_bot_detector.admin.metadata.detected_bot:
         parent: darvin_admin.metadata.abstract
@@ -10,3 +12,9 @@ services:
             - "%darvin_bot_detector.admin.metadata.detected_bot.config%"
         tags:
             - { name: darvin_admin.metadata }
+
+    darvin_bot_detector.admin.security_configuration:
+        class: "%darvin_bot_detector.admin.security_configuration.class%"
+        tags:
+            - { name: darvin_config.configuration }
+            - { name: darvin_admin.security_configuration }
