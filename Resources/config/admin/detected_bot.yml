@@ -1,4 +1,3 @@
-entity_name: bot
 menu:
     icons:
         main:    bundles/darvinbotdetector/images/admin/detected_bot_main.png
