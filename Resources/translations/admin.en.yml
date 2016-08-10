@@ -17,9 +17,5 @@ bot:
         response_code: Response code
         url:           URL
 
-configuration:
-    darvin_bot_detector_security:
-        title: The "Bot detector" module security configuration
-
 securable:
     bot: Bot request

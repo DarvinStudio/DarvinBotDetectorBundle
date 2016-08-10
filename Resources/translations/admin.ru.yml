@@ -17,9 +17,5 @@ bot:
         response_code: Код ответа
         url:           URL
 
-configuration:
-    darvin_bot_detector_security:
-        title: Настройки безопасности модуля «Детектор ботов»
-
 securable:
     bot: Запрос бота
