@@ -1,8 +1,5 @@
 bot:
     action:
-        filter:
-            reset:  Сбросить фильтр
-            submit: Применить фильтр
         index:
             link:  Запросы ботов
             title: Запросы ботов

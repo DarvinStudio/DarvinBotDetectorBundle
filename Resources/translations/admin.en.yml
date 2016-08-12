@@ -1,8 +1,5 @@
 bot:
     action:
-        filter:
-            reset:  Reset filter
-            submit: Apply filter
         index:
             link:  Bot requests
             title: Bot requests
