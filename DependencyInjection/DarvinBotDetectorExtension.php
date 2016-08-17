@@ -44,7 +44,7 @@ class DarvinBotDetectorExtension extends Extension implements PrependExtensionIn
                     [
                         'alias'  => 'bot',
                         'entity' => DetectedBot::DETECTED_BOT_CLASS,
-                        'config' => __DIR__.'/../Resources/config/admin/detected_bot.yml',
+                        'config' => '@DarvinBotDetectorBundle/Resources/config/admin/detected_bot.yml',
                     ],
                 ],
             ]);
