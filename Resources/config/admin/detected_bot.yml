@@ -4,7 +4,7 @@ menu:
         sidebar: bundles/darvinbotdetector/images/admin/detected_bot_sidebar.png
     colors:
         main: "#6c6c6c"
-disabled_routes:
+route_blacklist:
     - copy
     - delete
     - edit
