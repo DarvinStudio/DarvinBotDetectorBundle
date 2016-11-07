@@ -13,7 +13,7 @@
   ],
   "require": {
     "vipx/bot-detect-bundle":           "*",
-    "darvinstudio/darvin-admin-bundle": "@dev"
+    "darvinstudio/darvin-admin-bundle": "*"
   },
   "require-dev": {
     "andyftw/image-faker":               "^1.1",
