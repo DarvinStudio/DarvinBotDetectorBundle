@@ -4,7 +4,7 @@ bot:
             link: 'بوت الطلبات'
             title: 'بوت الطلبات'
         show:
-            title: 'بوت طلب من %الكيان%'
+            title: 'بوت طلب من %entity%'
     entity:
         bot_type: 'بوت نوع'
         date: تاريخ
