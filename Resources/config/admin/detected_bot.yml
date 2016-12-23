@@ -5,6 +5,7 @@ menu:
     colors:
         main: "#6c6c6c"
 route_blacklist:
+    - batch-delete
     - copy
     - delete
     - edit
