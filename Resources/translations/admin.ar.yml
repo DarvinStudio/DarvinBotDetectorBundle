@@ -1,0 +1,17 @@
+bot:
+    action:
+        index:
+            link: 'بوت الطلبات'
+            title: 'بوت الطلبات'
+        show:
+            title: 'بوت طلب من %الكيان%'
+    entity:
+        bot_type: 'بوت نوع'
+        date: تاريخ
+        date_from: 'التاريخ (من)'
+        date_to: 'تاريخ ()'
+        ip: IP
+        response_code: 'رمز الاستجابة'
+        url: URL
+securable:
+    bot: 'طلب بوت'
