@@ -1,0 +1,17 @@
+bot:
+    action:
+        index:
+            link: 'Bot demandes'
+            title: 'Bot demandes'
+        show:
+            title: 'Bot demande de %entity%'
+    entity:
+        bot_type: 'De type Bot'
+        date: Date
+        date_from: 'Date (à partir de)'
+        date_to: 'Date (de)'
+        ip: IP
+        response_code: 'Code de réponse'
+        url: URL
+securable:
+    bot: 'Demande de statut de Bot'
