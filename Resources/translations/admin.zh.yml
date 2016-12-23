@@ -1,0 +1,17 @@
+bot:
+    action:
+        index:
+            link: 机器人的请求
+            title: 机器人的请求
+        show:
+            title: '机器人的请求 %entity%'
+    entity:
+        bot_type: 机器人的类型
+        date: 日期
+        date_from: Date()
+        date_to: Date()
+        ip: IP
+        response_code: 响应的代码
+        url: URL
+securable:
+    bot: 机器人的请求
