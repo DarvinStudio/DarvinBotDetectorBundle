@@ -18,8 +18,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class DetectedBot
 {
-    const DETECTED_BOT_CLASS = __CLASS__;
-
     /**
      * @var int
      *
