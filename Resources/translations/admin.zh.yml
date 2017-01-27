@@ -13,5 +13,6 @@ bot:
         ip: IP
         response_code: 响应的代码
         url: URL
-securable:
-    bot: 机器人的请求
+entity_name:
+    single:
+        bot: 机器人的请求

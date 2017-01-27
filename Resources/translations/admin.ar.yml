@@ -13,5 +13,6 @@ bot:
         ip: IP
         response_code: 'رمز الاستجابة'
         url: URL
-securable:
-    bot: 'طلب بوت'
+entity_name:
+    single:
+        bot: 'طلب بوت'

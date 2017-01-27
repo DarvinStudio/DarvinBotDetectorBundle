@@ -13,5 +13,6 @@ bot:
         ip: IP
         response_code: 'Code de réponse'
         url: URL
-securable:
-    bot: 'Demande de statut de Bot'
+entity_name:
+    single:
+        bot: 'Demande de statut de Bot'
