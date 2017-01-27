@@ -14,5 +14,6 @@ bot:
         response_code: Response code
         url:           URL
 
-securable:
-    bot: Bot request
+entity_name:
+    single:
+        bot: Bot request

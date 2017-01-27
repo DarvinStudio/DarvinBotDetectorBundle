@@ -14,5 +14,6 @@ bot:
         response_code: Код ответа
         url:           URL
 
-securable:
-    bot: Запрос бота
+entity_name:
+    single:
+        bot: Запрос бота
