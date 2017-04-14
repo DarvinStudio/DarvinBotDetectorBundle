@@ -1,9 +1,5 @@
 menu:
-    icons:
-        main:    bundles/darvinbotdetector/images/admin/detected_bot_main.png
-        sidebar: bundles/darvinbotdetector/images/admin/detected_bot_sidebar.png
-    colors:
-        main: "#6c6c6c"
+    group: modules
 route_blacklist:
     - batch-delete
     - copy
