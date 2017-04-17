@@ -1,5 +1,7 @@
 menu:
     group: modules
+    icons:
+        main: bundles/darvinbotdetector/images/admin/detected_bot_main.png
 route_blacklist:
     - batch-delete
     - copy
